@@ -11,6 +11,12 @@ st.markdown("""
         background: linear-gradient(180deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
     }
     h1, h2, h3, p, div, span, button { color: white !important; }
+    .block-container {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        max-width: 900px;
+        margin: 0 auto;
+    }
     .news-category {
         display: inline-block;
         background: #00d4ff;
@@ -53,6 +59,12 @@ st.markdown("""
         background: rgba(0, 212, 255, 0.3) !important;
         border: 1px solid #00d4ff !important;
         color: white !important;
+    }
+    div[data-testid="stMarkdownContainer"] {
+        text-align: center;
+    }
+    .stHeading {
+        text-align: center;
     }
 </style>
 """, unsafe_allow_html=True)
