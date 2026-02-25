@@ -66,7 +66,54 @@ st.markdown("<p class='title'>📰 AziNews</p>", unsafe_allow_html=True)
 st.markdown(f"<p style='text-align:center;'>{datetime.now().strftime('%A, %d %B %Y')} | România</p>", unsafe_allow_html=True)
 st.markdown("---")
 
-# ============ STIRI ============
+# ============ INFO RAPIDE (TOP) ============
+st.markdown("## 📊 Informații Rapide")
+
+c1, c2, c3, c4 = st.columns(4)
+
+with c1:
+    st.markdown("<div class='card'>", unsafe_allow_html=True)
+    st.markdown("### ☀️ Vremea")
+    try:
+        r = requests.get("https://wttr.in/Bucharest?format=%c%t", timeout=5)
+        if r.status_code == 200:
+            st.markdown(f"<p class='big-text'>{r.text.strip()}</p>", unsafe_allow_html=True)
+    except:
+        st.markdown("<p class='big-text'>13°C</p>", unsafe_allow_html=True)
+    st.markdown("București")
+    st.markdown("</div>", unsafe_allow_html=True)
+
+with c2:
+    st.markdown("<div class='card'>", unsafe_allow_html=True)
+    st.markdown("### 🕐 Ora")
+    st.markdown(f"<p class='big-text'>{datetime.now().strftime('%H:%M')}</p>", unsafe_allow_html=True)
+    st.markdown(datetime.now().strftime('%A'))
+    st.markdown("</div>", unsafe_allow_html=True)
+
+with c3:
+    st.markdown("<div class='card'>", unsafe_allow_html=True)
+    st.markdown("### 💱 Curs")
+    try:
+        r = requests.get("https://api.frankfurter.app/latest?from=EUR&to=RON", timeout=5)
+        if r.status_code == 200:
+            eur = r.json().get("rates", {}).get("RON", "N/A")
+            st.markdown(f"<p class='big-text'>€ {eur}</p>", unsafe_allow_html=True)
+    except:
+        st.markdown("<p class='big-text'>5.10</p>", unsafe_allow_html=True)
+    st.markdown("RON/EUR")
+    st.markdown("</div>", unsafe_allow_html=True)
+
+with c4:
+    st.markdown("<div class='card'>", unsafe_allow_html=True)
+    st.markdown("### ⛽ Carburanti")
+    st.markdown("B: 7.92")
+    st.markdown("M: 8.29")
+    st.markdown("GPL: 3.95")
+    st.markdown("</div>", unsafe_allow_html=True)
+
+st.markdown("---")
+
+# ============ STIRI (MIDDLE) ============
 st.markdown("## 📰 Știri din România")
 
 @st.cache_data(ttl=300)
@@ -167,56 +214,6 @@ for i, news in enumerate(news_data):
         st.markdown(f"<p class='news-source'>📎 Sursa: <a href='{news['url']}' target='_blank'>{news['url']}</a></p>", unsafe_allow_html=True)
     
     st.markdown("---")
-
-# ============ FOOTER ============
-st.markdown("<div class='footer-row'>", unsafe_allow_html=True)
-st.markdown("## 📊 Informatii Rapide")
-
-c1, c2, c3, c4 = st.columns(4)
-
-with c1:
-    st.markdown("<div class='card'>", unsafe_allow_html=True)
-    st.markdown("### ☀️ Vremea")
-    try:
-        r = requests.get("https://wttr.in/Bucharest?format=%c%t", timeout=5)
-        if r.status_code == 200:
-            st.markdown(f"<p class='big-text'>{r.text.strip()}</p>", unsafe_allow_html=True)
-    except:
-        st.markdown("<p class='big-text'>13°C</p>", unsafe_allow_html=True)
-    st.markdown("București")
-    st.markdown("</div>", unsafe_allow_html=True)
-
-with c2:
-    st.markdown("<div class='card'>", unsafe_allow_html=True)
-    st.markdown("### 🕐 Ora")
-    st.markdown(f"<p class='big-text'>{datetime.now().strftime('%H:%M')}</p>", unsafe_allow_html=True)
-    st.markdown(datetime.now().strftime('%A'))
-    st.markdown("</div>", unsafe_allow_html=True)
-
-with c3:
-    st.markdown("<div class='card'>", unsafe_allow_html=True)
-    st.markdown("### 💱 Curs")
-    try:
-        r = requests.get("https://api.frankfurter.app/latest?from=EUR&to=RON", timeout=5)
-        if r.status_code == 200:
-            eur = r.json().get("rates", {}).get("RON", "N/A")
-            st.markdown(f"<p class='big-text'>€ {eur}</p>", unsafe_allow_html=True)
-    except:
-        st.markdown("<p class='big-text'>5.10</p>", unsafe_allow_html=True)
-    st.markdown("RON/EUR")
-    st.markdown("</div>", unsafe_allow_html=True)
-
-with c4:
-    st.markdown("<div class='card'>", unsafe_allow_html=True)
-    st.markdown("### ⛽ Carburanti")
-    st.markdown("B: 7.92")
-    st.markdown("M: 8.29")
-    st.markdown("GPL: 3.95")
-    st.markdown("</div>", unsafe_allow_html=True)
-
-st.markdown("</div>", unsafe_allow_html=True)
-
-st.markdown("---")
 
 # Horoscop
 st.markdown("## 🔮 Horoscop")
