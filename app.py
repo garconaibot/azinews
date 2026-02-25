@@ -12,7 +12,7 @@ st.markdown("""
     }
     h1, h2, h3, p, div, span, button { color: white !important; }
     .block-container {
-        padding-top: 2rem;
+        padding-top: 1rem;
         padding-bottom: 2rem;
         max-width: 900px;
         margin: 0 auto;
