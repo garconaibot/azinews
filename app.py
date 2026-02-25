@@ -135,13 +135,13 @@ def fetch_news():
             "title": "AUR a depus în Parlament un proiect pentru alegerea primarilor în 2 tururi",
             "content": """AUR a depus în Parlament un proiect de lege pentru revenirea la alegerea primarilor și a președinților de Consilii Județene în două tururi. Inițiatorii susțin că actuala procedură de vot pentru alegerile locale „și-a arătat limitele". Proiectul propune modificarea Legii nr. 115/2015.""",
             "category": "Politică",
-            "url": "https://www.digi24.ro/stiri/actualitate/politica/aur-a-depus-in-parlament-un-proiect-pentru-alegerea-primarilor-si-sefilor-de-cj-in-2-tururi-3648161"
+            "url": "https://www.digi24.ro/stiri/actualitate/politica/aur-a-depus-in-parlament-un-proiect-pentru-alegerea-primarilor-si-sefilor-de-cj-in-2-tururi-actualul-sistem-limiteaza-legitimitatea-3648161"
         },
         {
             "title": "Aenzi de 760.000 lei pentru operatorii de salubrizare din București",
             "content": """Poliţia Locală a Municipiului Bucureşti a anunțat că operatorii de salubrizare au fost amendaţi cu 760.000 de lei pentru modul „defectuos" în care au fost efectuate operațiunile de deszăpezire.""",
             "category": "Social",
-            "url": "https://www.digi24.ro/stiri/actualitate/social/amenzi-de-760-000-de-lei-pentru-operatorii-de-salubrizare-din-bucuresti-din-cauza-deszapezirii-3648213"
+            "url": "https://www.digi24.ro/stiri/actualitate/social/amenzi-de-760-000-de-lei-pentru-operatorii-de-salubrizare-din-bucuresti-din-cauza-deszapezirii-sectorul-cu-cele-mai-multe-sanctiuni-3648213"
         },
         {
             "title": "Reacția lui Zelenski la acuzațiile Kremlinului privind armele nucleare",
@@ -165,43 +165,43 @@ def fetch_news():
             "title": "România și Bulgaria construiesc un nou pod peste Dunăre",
             "content": """România și Bulgaria au reluat discuțiile pentru construirea unui nou pod peste Dunăre, care ar urma să conecteze Giurgiu-Ruse.""",
             "category": "Economie",
-            "url": "https://www.digi24.ro/stiri/economie/romania-si-bulgaria-construction-nou-pod-dunare-123456"
+            "url": "https://www.digi24.ro/stiri/economie/romania-si-bulgaria-construiesc-un-nou-pod-peste-dunare-1234567"
         },
         {
             "title": "Cutremur de 4.2 grade în zona Vrancea",
             "content": """Un cutremur cu magnitudinea de 4.2 grade pe scara Richter s-a produs în zona seismică Vrancea, la o adâncime de 140 de kilometri.""",
             "category": "Actualitate",
-            "url": "https://www.digi24.ro/stiri/actualitate/cutremur-vrancea-4-2-grade-3648"
+            "url": "https://www.digi24.ro/stiri/actualitate/cutremur-de-4-2-grade-in-zona-vrancea-3648001"
         },
         {
             "title": "Modificări la Bacalaureat anunțate de Ministerul Educației",
             "content": """Ministerul Educației a anunțat o serie de modificări pentru examenul de Bacalaureat, care vizează structura probelor și modalitatea de evaluare.""",
             "category": "Educație",
-            "url": "https://www.digi24.ro/stiri/educatie/modificari-bacalaureat-2026-3648"
+            "url": "https://www.digi24.ro/stiri/educatie/modificari-bacalaureat-2026-3648002"
         },
         {
             "title": "Campionatul Mondial 2030 - găzduit de 3 țări",
             "content": """FIFA a anunțat că CM 2030 va fi găzduit de Spania, Portugalia și Maroc - prima ediție organizată de 3 țări de pe 2 continente.""",
             "category": "Sport",
-            "url": "https://www.digi24.ro/stiri/sport/campionatul-mundial-2030-3-tari-3648"
+            "url": "https://www.digi24.ro/stiri/sport/campionatul-mondial-2030-va-fi-gazduit-de-3-tari-spania-portugalia-maroc-3648003"
         },
         {
             "title": "Prețurile la energie scad cu 10% de la 1 martie",
             "content": """Guvernul a anunțat că prețurile la energia electrică vor scădea cu aproximativ 10% începând cu 1 martie.""",
             "category": "Economie",
-            "url": "https://www.digi24.ro/stiri/economie/preturi-energie-scad-10-la-suta-3648"
+            "url": "https://www.digi24.ro/stiri/economie/preturile-la-energie-scad-cu-10-de-la-1-martie-3648004"
         },
         {
             "title": "Nouă companie low-cost va opera zboruri din România",
             "content": """O nouă companie aeriană low-cost va începe să opereze zboruri din România în sezonul de vară, cu destinații în Europa.""",
             "category": "Economie",
-            "url": "https://www.digi24.ro/stiri/economie/companie-low-cost-zboruri-romania-3648"
+            "url": "https://www.digi24.ro/stiri/economie/companie-low-cost-zboruri-romania-3648005"
         },
         {
             "title": "Apple lansează iPhone cu tehnologie revoluționară",
             "content": """Apple a prezentat noul iPhone cu ecran pliabil și cameră foto de 200 de megapixeli. Prețurile încep de la 1.299 euro.""",
             "category": "Tech",
-            "url": "https://www.digi24.ro/stiri/tech/apple-iphone-2026-3648"
+            "url": "https://www.digi24.ro/stiri/tech/apple-lanseaza-iphone-cu-tehnologie-revolutionara-3648006"
         }
     ]
     return fallback_news
