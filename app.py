@@ -178,6 +178,48 @@ def fetch_news():
             "content": """IIF: Cheltuielile guvernamentale au dus datoria mondială la un nivel record în 2025. Află mai multe detalii citind articolul complet.""",
             "category": "Extern",
             "url": "https://www.digi24.ro/stiri/externe/mapamond/iif-cheltuielile-guvernamentale-au-dus-datoria-mondiala-la-un-nivel-record-in-2025-3648397"
+        },
+        {
+            "title": "ExclusivAvertismentul consilierului lui Mugur Isărescu: Cum devin pensiile speciale o problemă socia",
+            "content": """ExclusivAvertismentul consilierului lui Mugur Isărescu: Cum devin pensiile speciale o problemă socială. Află mai multe detalii citind articolul complet.""",
+            "category": "Economie",
+            "url": "https://www.digi24.ro/stiri/economie/avertismentul-consilierului-lui-mugur-isarescu-cum-devin-pensiile-speciale-o-problema-sociala-3648407"
+        },
+        {
+            "title": "Peste 2.500 de hectare de pădure din Covasna au revenit în proprietatea statului. Decizia instanței ",
+            "content": """Peste 2.500 de hectare de pădure din Covasna au revenit în proprietatea statului. Decizia instanței este definitivă. Află mai multe detalii citind articolul complet.""",
+            "category": "Economie",
+            "url": "https://www.digi24.ro/stiri/sci-tech/natura-si-mediu/peste-2-500-de-hectare-de-padure-din-covasna-au-revenit-in-proprietatea-statului-decizia-instantei-este-definitiva-3648145"
+        },
+        {
+            "title": "Carnea de porc congelată nu va mai putea fi vândută ca proaspătă în România. Anunțul ministrului Flo",
+            "content": """Carnea de porc congelată nu va mai putea fi vândută ca proaspătă în România. Anunțul ministrului Florin Barbu. Află mai multe detalii citind articolul complet.""",
+            "category": "Economie",
+            "url": "https://www.digi24.ro/stiri/economie/agricultura/carnea-de-porc-congelata-nu-va-mai-putea-fi-vanduta-ca-proaspata-in-romania-anuntul-ministrului-florin-barbu-3648097"
+        },
+        {
+            "title": "VideoRaport: Fructe cu pesticide au fost identificate în mai multe județe. Ce produse sunt neconform",
+            "content": """VideoRaport: Fructe cu pesticide au fost identificate în mai multe județe. Ce produse sunt neconforme. Află mai multe detalii citind articolul complet.""",
+            "category": "Economie",
+            "url": "https://www.digi24.ro/stiri/economie/raport-fructe-cu-pesticide-au-fost-identificate-in-mai-multe-judete-ce-alimente-sunt-neconforme-3648049"
+        },
+        {
+            "title": "Video„Şcoală săracă – Ţară needucată”: sindicaliștii din educație și studenții, protest la Cotroceni",
+            "content": """Video„Şcoală săracă – Ţară needucată”: sindicaliștii din educație și studenții, protest la Cotroceni. Scrisoare deschisă pentru Nicușor Dan. Află mai multe detalii citind articolul complet.""",
+            "category": "Educație",
+            "url": "https://www.digi24.ro/stiri/actualitate/educatie/scoala-saraca-tara-needucata-protest-al-sidicalistilor-din-educatie-la-palatul-cotroceni-de-la-1200-la-1330-3647091"
+        },
+        {
+            "title": "Video ExclusivUn fost consilier prezidențial și-a rupt diploma de doctor, în direct, la Digi24. „Dip",
+            "content": """Video ExclusivUn fost consilier prezidențial și-a rupt diploma de doctor, în direct, la Digi24. „Diplomele de doctorat au ajuns o povară”. Află mai multe detalii citind articolul complet.""",
+            "category": "Educație",
+            "url": "https://www.digi24.ro/stiri/actualitate/un-fost-consilier-prezidential-si-a-rupt-diploma-de-doctor-in-direct-la-digi24-diplomele-de-doctorat-au-ajuns-o-povara-3644761"
+        },
+        {
+            "title": "VideoIndemnizația de doctorat, redusă la jumătate. Sindicatele se revoltă: Neînțeleaptă măsura. Strâ",
+            "content": """VideoIndemnizația de doctorat, redusă la jumătate. Sindicatele se revoltă: Neînțeleaptă măsura. Strângem cureaua, dar nu oricât și nu oricum. Află mai multe detalii citind articolul complet.""",
+            "category": "Educație",
+            "url": "https://www.digi24.ro/stiri/actualitate/educatie/indemnizatia-de-doctorat-redusa-la-jumatate-sindicatele-se-revolta-neinteleapta-masura-strangem-cureaua-dar-nu-oricat-si-nu-oricum-3644227"
         }
     ]
     return fallback_news
