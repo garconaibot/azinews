@@ -380,8 +380,8 @@ for i, (sign, msg) in enumerate(horoscope):
 st.markdown("""
 <div style='text-align:center; color:gray; font-size:0.8em; margin-top:30px; padding:15px; background:rgba(255,255,255,0.05); border-radius:10px;'>
 <b>⚠️ Disclaimer</b><br>
-AziNews este un agregator de știri publice. Nu deținem conținutul afișat. <br>
-Toate știrile aparțin surselor originale (Digi24, Mediafax). <br>
+AziNews este un agregator de știri publice și radio. Nu deținem conținutul afișat. <br>
+Toate știrile și posturile de radio aparțin surselor originale (Digi24, Mediafax, Enjoy Radio). <br>
 Acest serviciu este doar în scop informativ.
 </div>
 """, unsafe_allow_html=True)
