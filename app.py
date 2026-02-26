@@ -325,9 +325,20 @@ for i, news in enumerate(news_data):
 
 # Horoscop
 st.markdown("## 🔮 Horoscop")
-horoscope = [("Berbac", "Zi productivă"), ("Taur", "Vești bune"), ("Gemeni", "Decizii importante"), ("Rac", "Zi liniștită"),
-    ("Leu", "Energie maximă"), ("Fecioară", "Detaliile contează"), ("Balanță", "Social activ"), ("Scorpion", "Intuiția te ghidează"),
-    ("Săgetător", "Călătorii"), ("Capricorn", "Muncă răsplătită"), ("Vărsător", "Inovație"), ("Pești", "Reflecție")]
+horoscope = (
+    ("Berbac", "Energie maximă"),
+    ("Taur", "Zi de relaxare"),
+    ("Gemeni", "Zi dinamica"),
+    ("Rac", "Timp cu familia"),
+    ("Leu", "Strălucești natural"),
+    ("Fecioară", "Sănătate"),
+    ("Balanță", "Artă și frumusețe"),
+    ("Scorpion", "Putere personală"),
+    ("Săgetător", "Învățare nouă"),
+    ("Capricorn", "Responsabilitate"),
+    ("Vărsător", "Inovație"),
+    ("Pești", "Spiritualitate")
+)
 
 h1, h2, h3, h4 = st.columns(4)
 for i, (sign, msg) in enumerate(horoscope):
