@@ -143,7 +143,7 @@ with c3:
 
 with c4:
     st.markdown("<div class='card'>", unsafe_allow_html=True)
-    st.markdown("### ⛽ Carburanti")
+    st.markdown("### ⛽ Carburant")
     st.markdown("B: 7.92 RON")
     st.markdown("M: 8.29 RON")
     st.markdown("GPL: 3.95 RON")
