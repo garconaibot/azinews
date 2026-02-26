@@ -282,6 +282,8 @@ for i, news in enumerate(news_data):
     
     if st.session_state.expanded_news.get(i):
         st.markdown(f"<div class='news-content'>{news['content']}</div>", unsafe_allow_html=True)
+        if news.get('image'):
+            st.image(news['image'], use_container_width=True)
         st.markdown(f"<p class='news-source'>📎 Sursa: <a href='{news['url']}' target='_blank'>{news['url']}</a></p>", unsafe_allow_html=True)
     
     st.markdown("---")
