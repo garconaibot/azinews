@@ -257,4 +257,16 @@ for i, (sign, msg) in enumerate(horoscope):
         st.markdown(f"**{sign}** → {msg}")
 
 st.markdown("---")
+
+# Disclaimer
+st.markdown("""
+<div style='text-align:center; color:gray; font-size:0.8em; margin-top:30px; padding:15px; background:rgba(255,255,255,0.05); border-radius:10px;'>
+<b>⚠️ Disclaimer</b><br>
+AziNews este un agregator de știri publice. Nu deținem conținutul afișat. <br>
+Toate știrile aparțin surselor originale (Digi24). <br>
+Acest serviciu este doar în scop informativ.
+</div>
+""", unsafe_allow_html=True)
+
+st.markdown("---")
 st.markdown("<p style='text-align:center; color:gray;'>🤖 GarconAI - Asistentul tău personal</p>", unsafe_allow_html=True)
