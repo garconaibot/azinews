@@ -111,7 +111,7 @@ st.markdown("**📻 Enjoy Radio**")
 # Custom player cu volum setat
 st.components.v1.html(f"""
 <div style="background:rgba(255,255,255,0.1); border-radius:10px; padding:10px; text-align:center;">
-    <audio id="radioPlayer" controls style="width:100%;">
+    <audio id="radioPlayer" controls style="width:50%;">
         <source src="{radio_url}" type="audio/mp3">
     </audio>
 </div>
