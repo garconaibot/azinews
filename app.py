@@ -106,7 +106,7 @@ st.markdown("### 📻 Radio Live")
 # Enjoy Radio - postul principal
 radio_url = "https://live.enjoyradio.ro/radio/8000/enjoylive.mp3"
 
-st.markdown("**📻 Enjoy Radio**")
+st.markdown("**Enjoy Radio**")
 
 # Custom player cu volum setat
 st.components.v1.html(f"""
