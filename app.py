@@ -110,11 +110,22 @@ radio_stations = [
     ("DJ Radio", "https://stream.djradio.ro/radio/8000/stream.mp3"),
 ]
 
-r1, r2, r3, r4 = st.columns(4)
-for i, (name, url) in enumerate(radio_stations):
-    with [r1, r2, r3, r4][i % 4]:
-        st.markdown(f"**{name}**")
-        st.audio(url, format="audio/mp3")
+# Selectează postul
+station_names = [s[0] for s in radio_stations]
+selected_station = st.selectbox("Alege postul:", station_names)
+
+# Găsește URL-ul postului selectat
+selected_url = next(url for name, url in radio_stations if name == selected_station)
+
+# Afișează player-ul
+st.markdown(f"**📻 Acum: {selected_station}**")
+audio_html = f"""
+<audio controls autoplay>
+    <source src="{selected_url}" type="audio/mp3">
+    Your browser does not support the audio element.
+</audio>
+"""
+st.markdown(audio_html, unsafe_allow_html=True)
 
 st.markdown("---")
 
