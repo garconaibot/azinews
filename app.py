@@ -107,18 +107,7 @@ st.markdown("### 📻 Radio Live")
 radio_url = "https://live.enjoyradio.ro/radio/8000/enjoylive.mp3"
 
 st.markdown("**📻 Enjoy Radio**")
-audio_html = f"""
-<audio id="radioPlayer" controls>
-    <source src="{radio_url}" type="audio/mp3">
-    Your browser does not support the audio element.
-</audio>
-<script>
-    var audio = document.getElementById('radioPlayer');
-    audio.volume = 0.15;
-    audio.addEventListener('play', function() {{ audio.volume = 0.15; }});
-</script>
-"""
-st.markdown(audio_html, unsafe_allow_html=True)
+st.audio(radio_url, format="audio/mp3", start_time=0)
 
 st.markdown("---")
 
