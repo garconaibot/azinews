@@ -1,6 +1,11 @@
 import streamlit as st
 import requests
 from datetime import datetime
+import pytz
+
+# Set timezone Romania
+bucharest_tz = pytz.timezone('Europe/Bucharest')
+now_bucharest = datetime.now(bucharest_tz)
 
 st.set_page_config(page_title="AziNews", page_icon="📰", layout="wide")
 
@@ -75,7 +80,7 @@ if 'expanded_news' not in st.session_state:
 
 # ============ HEADER ============
 st.markdown("<p class='title'>📰 AziNews</p>", unsafe_allow_html=True)
-st.markdown(f"<p style='text-align:center;'>{datetime.now().strftime('%A, %d %B %Y')} | România</p>", unsafe_allow_html=True)
+st.markdown(f"<p style='text-align:center;'>{now_bucharest.strftime('%A, %d %B %Y')} | România</p>", unsafe_allow_html=True)
 st.markdown("---")
 
 # ============ INFO RAPIDE (SUS) ============
@@ -99,8 +104,8 @@ with c1:
 with c2:
     st.markdown("<div class='card'>", unsafe_allow_html=True)
     st.markdown("### 🕐 Ora")
-    st.markdown(f"<p class='big-text'>{datetime.now().strftime('%H:%M')}</p>", unsafe_allow_html=True)
-    st.markdown(datetime.now().strftime('%A'))
+    st.markdown(f"<p class='big-text'>{now_bucharest.strftime('%H:%M')}</p>", unsafe_allow_html=True)
+    st.markdown(now_bucharest.strftime('%A'))
     st.markdown("</div>", unsafe_allow_html=True)
 
 with c3:
