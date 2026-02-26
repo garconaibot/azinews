@@ -121,7 +121,7 @@ with c2:
     st.markdown("<div class='card'>", unsafe_allow_html=True)
     st.markdown("### 🕐 Ora")
     st.markdown(f"<p class='big-text'>{now_bucharest.strftime('%H:%M')}</p>", unsafe_allow_html=True)
-    st.markdown(now_bucharest.strftime('%A'))
+    st.markdown(day_ro)
     st.markdown("</div>", unsafe_allow_html=True)
 
 with c3:
