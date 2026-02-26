@@ -132,94 +132,94 @@ st.markdown("## 📰 Știri din România")
 def fetch_news():
     fallback_news = [
         {
-            "title": "Desemnarea noilor șefi de parchete. Cei cinci candidați pentru funcţia de procuror-şef adjunct al DI",
-            "content": """Desemnarea noilor șefi de parchete. Cei cinci candidați pentru funcţia de procuror-şef adjunct al DIICOT, intervievați astăzi. Află mai multe detalii citind articolul complet.""",
-            "category": "Actualitate",
-            "url": "https://www.digi24.ro/stiri/actualitate/justitie/desemnarea-noilor-sefi-de-parchete-cei-cinci-candidati-pentru-functia-de-procuror-sef-adjunct-al-diicot-intervievati-astazi-3648711"
-        },
-        {
-            "title": "VideoIlie Bolojan, vizită oficială la Bruxelles: premierul va discuta cu Ursula von der Leyen despre",
-            "content": """VideoIlie Bolojan, vizită oficială la Bruxelles: premierul va discuta cu Ursula von der Leyen despre PNRR. Agenda deplasării. Află mai multe detalii citind articolul complet.""",
-            "category": "Actualitate",
-            "url": "https://www.digi24.ro/stiri/actualitate/politica/ilie-bolojan-vizita-oficiala-la-bruxelles-premierul-va-discuta-cu-ursula-von-der-leyen-despre-pnrr-agenda-deplasarii-3648699"
-        },
-        {
-            "title": "Cine este astronautul din cauza căruia a fost evacuat întreg echipajul de pe Staţia Spaţială Interna",
-            "content": """Cine este astronautul din cauza căruia a fost evacuat întreg echipajul de pe Staţia Spaţială Internaţională. „Mă simt foarte bine”. Află mai multe detalii citind articolul complet.""",
-            "category": "Actualitate",
-            "url": "https://www.digi24.ro/stiri/externe/sua/cine-este-astronautul-din-cauza-caruia-a-fost-evacuat-intreg-echipajul-de-pe-statia-spatiala-internationala-ma-simt-foarte-bine-3648533"
-        },
-        {
-            "title": "Expunerea la zgomotul din trafic în timpul somnului este asociată cu creșterea „colesterolului rău”,",
-            "content": """Expunerea la zgomotul din trafic în timpul somnului este asociată cu creșterea „colesterolului rău”, arată un studiu european. Află mai multe detalii citind articolul complet.""",
-            "category": "Actualitate",
-            "url": "https://www.digi24.ro/stiri/actualitate/sanatate/expunerea-la-zgomotul-din-trafic-in-timpul-somnului-este-asociata-cu-cresterea-colesterolului-rau-arata-un-studiu-european-3648401"
-        },
-        {
-            "title": "Video„A încetat să mai existe”. Ucrainenii le-au distrus rușilor un lansator de rachete S-400 și un ",
-            "content": """Video„A încetat să mai existe”. Ucrainenii le-au distrus rușilor un lansator de rachete S-400 și un sistem Panțir în Crimeea ocupată ilegal. Află mai multe detalii citind articolul complet.""",
-            "category": "Extern",
-            "url": "https://www.digi24.ro/stiri/externe/a-incetat-sa-mai-existe-ucrainenii-le-au-distrus-rusilor-un-lansator-de-rachete-s-400-si-un-sistem-pantir-in-crimeea-ocupata-ilegal-3648595"
-        },
-        {
-            "title": "Cine este astronautul din cauza căruia a fost evacuat întreg echipajul de pe Staţia Spaţială Interna",
-            "content": """Cine este astronautul din cauza căruia a fost evacuat întreg echipajul de pe Staţia Spaţială Internaţională. „Mă simt foarte bine”. Află mai multe detalii citind articolul complet.""",
-            "category": "Extern",
-            "url": "https://www.digi24.ro/stiri/externe/sua/cine-este-astronautul-din-cauza-caruia-a-fost-evacuat-intreg-echipajul-de-pe-statia-spatiala-internationala-ma-simt-foarte-bine-3648533"
-        },
-        {
-            "title": "Cum i-a întins Deutsche Bank covorul roșu lui Jeffrey Epstein: unul dintre cei mai sofisticați, dar ",
-            "content": """Cum i-a întins Deutsche Bank covorul roșu lui Jeffrey Epstein: unul dintre cei mai sofisticați, dar și mai dificili clienți. Află mai multe detalii citind articolul complet.""",
-            "category": "Extern",
-            "url": "https://www.digi24.ro/stiri/externe/sua/cum-i-a-intins-deutsche-bank-covorul-rosu-lui-jeffrey-epstein-unul-dintre-cei-mai-sofisticati-dar-si-mai-dificili-clienti-3647827"
-        },
-        {
-            "title": "Ce s-a întâmplat după ce Elon Musk a deconectat armata rusă de la rețeaua Starlink",
-            "content": """Ce s-a întâmplat după ce Elon Musk a deconectat armata rusă de la rețeaua Starlink. Află mai multe detalii citind articolul complet.""",
-            "category": "Extern",
-            "url": "https://www.digi24.ro/stiri/externe/ce-s-a-intamplat-dupa-ce-elon-musk-a-deconectat-armata-rusa-de-la-reteaua-starlink-3648433"
-        },
-        {
-            "title": "AnalizăCât de realiste și eficiente sunt măsurile pentru relansarea economiei adoptate de Guvern. Ec",
-            "content": """AnalizăCât de realiste și eficiente sunt măsurile pentru relansarea economiei adoptate de Guvern. Economist: Este o culegere de măsuri tehnice. Află mai multe detalii citind articolul complet.""",
+            "title": "Șoferii cu permis emis în străinătate ar putea primi documentul înapoi doar după ce achită amenda, î",
+            "content": """Șoferii care au permisul de conducere eliberat de o autoritate străină și cărora li s-a suspendat dreptul de a conduce în România ar putea fi obligați să își achite integral amenda înainte de a-și rec""",
             "category": "Economie",
-            "url": "https://www.digi24.ro/stiri/economie/cat-de-realiste-si-eficiente-sunt-masurile-pentru-relansarea-economiei-adoptate-de-guvern-economist-este-o-culegere-de-masuri-tehnice-3647853"
+            "url": "https://www.digi24.ro/stiri/economie/soferii-cu-permis-emis-in-strainatate-ar-putea-primi-documentul-inapoi-doar-dupa-ce-achita-amenda-inainte-de-a-parasi-romania-3649043"
         },
         {
-            "title": "ExclusivAvertismentul consilierului lui Mugur Isărescu: Cum devin pensiile speciale o problemă socia",
-            "content": """ExclusivAvertismentul consilierului lui Mugur Isărescu: Cum devin pensiile speciale o problemă socială. Află mai multe detalii citind articolul complet.""",
+            "title": "Amplu caz de proxenetism într-un club de striptease din Capitală. Zeci de victime obligate să întreț",
+            "content": """Procurorii Direcției de Investigare a Infracțiunilor de Criminalitate Organizată și Terorirsm (DIICOT) fac joi, 26 februarie, percheziții într-un amplu dosar care vizează o grupare care a exploatat ze""",
+            "category": "Actualitate",
+            "url": "https://www.digi24.ro/stiri/actualitate/justitie/amplu-caz-de-proxenetism-intr-un-club-de-striptease-din-capitala-zeci-de-victime-obligate-sa-intretina-relatii-sexuale-cu-clientii-3649063"
+        },
+        {
+            "title": "O imagine cu greutate: Kim Jong-un și fiica lui, „desemnată ca succesoare”, au apărut asortați în ha",
+            "content": """Fiica adolescentă a lui Kim Jong-un, Ju-ae, a apărut alături de tatăl său, în fotografiile de stat publicate pentru a marca etapele finale ale congresului Partidului Muncitorilor, aflat la guvernare î""",
+            "category": "Extern",
+            "url": "https://www.digi24.ro/stiri/externe/coreea-de-nord/o-imagine-cu-greutate-kim-jong-un-si-fiica-lui-desemnata-ca-succesoare-au-aparut-asortati-in-haine-de-piele-la-o-parada-militara-3649067"
+        },
+        {
+            "title": "Accident surprins pe camera de bord: bărbat cu ordin de protecție, reținut după ce a lovit mașina fo",
+            "content": """Un bărbat de 27 de ani din Caraș-Severin a fost reținut după ce a lovit în trafic mașina fostei sale partenere, deși avea emis pe numele său un ordin de protecție și era monitorizat prin brățară elect""",
+            "category": "Actualitate",
+            "url": "https://www.digi24.ro/stiri/actualitate/evenimente/accident-surprins-pe-camera-de-bord-barbat-cu-ordin-de-protectie-retinut-dupa-ce-a-lovit-masina-fostei-partenere-3649093"
+        },
+        {
+            "title": "Bogdan Ivan, după vizita la Washington: Obiectivul e clar - investiţii în infrastructură strategică,",
+            "content": """Ministrul Energiei, Bogdan Ivan, afirmă că a discutat, în cadrul unei vizite făcute la Washington, despre obţinerea de mai multă energie în bandă pentru România, investiţii de miliarde în infrastructu""",
+            "category": "Actualitate",
+            "url": "https://www.digi24.ro/stiri/actualitate/bogdan-ivan-dupa-vizita-la-washington-obiectivul-e-clar-investitii-in-infrastructura-strategica-proiecte-nucleare-duse-la-capat-3649045"
+        },
+        {
+            "title": "Criză de pământuri rare în SUA: industria aerospațială și semiconductorii, afectați de blocajele Chi",
+            "content": """Deficitul de pământuri rare esențiale pentru industria aerospațială și producția de cipuri din Statele Unite se adâncește, în pofida armistițiului comercial dintre Washington și Beijing, iar unele com""",
+            "category": "Extern",
+            "url": "https://www.digi24.ro/stiri/externe/criza-de-pamanturi-rare-in-sua-industria-aerospatiala-si-semiconductorii-afectati-de-blocajele-chinei-reuters-3648883"
+        },
+        {
+            "title": "Din 6 martie, Jurnalul de Științe revine la Digi World",
+            "content": """Din 6 martie, Jurnalul de Științe revine la Digi World Citește mai mult pe Digi24.""",
+            "category": "Actualitate",
+            "url": "https://www.digi24.ro/stiri/actualitate/din-6-martie-jurnalul-de-stiinte-revine-la-digi-world-3649033"
+        },
+        {
+            "title": "„Un bolnav cu mintea tulburată”. Donald Trump a răbufnit după ce Robert De Niro i-a îndemnat pe amer",
+            "content": """Actorul Robert De Niro este „un bolnav cu mintea tulburată”, a afirmat miercuri preşedintele american pe reţeaua sa Truth Social, după ce actorul a făcut un apel la „alungarea” administraţiei Trump pe""",
+            "category": "Extern",
+            "url": "https://www.digi24.ro/stiri/externe/sua/un-bolnav-cu-mintea-tulburata-donald-trump-a-rabufnit-dupa-ce-robert-de-niro-i-a-indemnat-pe-americani-sa-i-reziste-presedintelui-3648983"
+        },
+        {
+            "title": "Alertă de gripă aviară în Cluj: două lebede, găsite moarte în zona unui lac de acumulare. Au fost st",
+            "content": """Alertă de gripa aviară în Cluj, după ce două lebede au fost găsite moarte în zona unui lac de acumulare. Autoritățile au stabilit zone de restricție pentru a opri răspândirea bolii și oamenii sunt obl""",
+            "category": "Actualitate",
+            "url": "https://www.digi24.ro/stiri/actualitate/alerta-de-gripa-aviara-in-cluj-doua-lebede-gasite-moarte-in-zona-unui-lac-de-acumulare-au-fost-stabilite-mai-multe-restrictii-3648993"
+        },
+        {
+            "title": "Rusia încearcă „să se joace” cu Donald Trump pentru a amâna negocierile de pace, spune Volodimir Zel",
+            "content": """În cadrul unui interviu acordat la Kiev pentru televiziunea Fox News, apropiată lui Donald Trump, Volodimir Zelenski a afirmat că Rusia încearcă „să se joace cu preşedintele Statelor Unite” şi să trag""",
+            "category": "Extern",
+            "url": "https://www.digi24.ro/stiri/externe/ue/rusia-incearca-sa-se-joace-cu-donald-trump-pentru-a-amana-negocierile-de-pace-spune-volodimir-zelenski-nu-poate-sa-ne-ocupe-3648999"
+        },
+        {
+            "title": "Permis suspendat pentru neplata amenzilor. Cseke Attila: „Va aduce o colectare mult mai bună”. Ce tr",
+            "content": """Schimbarea legii privind neplata amenzilor de circulație înseamnă suspendarea permisului de șofer în cazul rău-platnicilor. Perioada de suspendare este calculată în funcție de valoarea amenzii. Pentru""",
             "category": "Economie",
-            "url": "https://www.digi24.ro/stiri/economie/avertismentul-consilierului-lui-mugur-isarescu-cum-devin-pensiile-speciale-o-problema-sociala-3648407"
+            "url": "https://www.digi24.ro/stiri/economie/permis-suspendat-pentru-neplata-amenzilor-ce-trebuie-sa-stie-soferii-cseke-attila-va-aduce-o-colectare-mult-mai-buna-3648945"
         },
         {
-            "title": "Peste 2.500 de hectare de pădure din Covasna au revenit în proprietatea statului. Decizia instanței ",
-            "content": """Peste 2.500 de hectare de pădure din Covasna au revenit în proprietatea statului. Decizia instanței este definitivă. Află mai multe detalii citind articolul complet.""",
-            "category": "Economie",
-            "url": "https://www.digi24.ro/stiri/sci-tech/natura-si-mediu/peste-2-500-de-hectare-de-padure-din-covasna-au-revenit-in-proprietatea-statului-decizia-instantei-este-definitiva-3648145"
+            "title": "Ședința CGMB de joi, suspendată din cauza absenței consilierilor PSD, PUSL și AUR. Ce proiecte erau ",
+            "content": """Consilierii generali ai Capitalei au fost convocați în şedinţă joi, de la ora 10:00, pentru a dezbate o serie de proiecte, printre care unele privind desfiinţarea Centrului Expo Arte şi creşterea chir""",
+            "category": "Actualitate",
+            "url": "https://www.digi24.ro/stiri/noua-sedinta-la-cgmb-in-contextul-tensiunilor-dintre-primarul-general-ciprian-ciucu-si-consilierii-psd-ce-proiecte-sunt-pe-agenda-3648775"
         },
         {
-            "title": "Carnea de porc congelată nu va mai putea fi vândută ca proaspătă în România. Anunțul ministrului Flo",
-            "content": """Carnea de porc congelată nu va mai putea fi vândută ca proaspătă în România. Anunțul ministrului Florin Barbu. Află mai multe detalii citind articolul complet.""",
-            "category": "Economie",
-            "url": "https://www.digi24.ro/stiri/economie/agricultura/carnea-de-porc-congelata-nu-va-mai-putea-fi-vanduta-ca-proaspata-in-romania-anuntul-ministrului-florin-barbu-3648097"
+            "title": "Donald Trump a venit cu un nou termen în care vrea să pună capăt războiului din Ucraina",
+            "content": """Președintele SUA, Donald Trump, a declarat în timpul unei convorbiri telefonice cu liderul ucrainean Volodimir Zelenski că dorește să pună capăt războiului din Ucraina cât mai curând posibil, au infor""",
+            "category": "Extern",
+            "url": "https://www.digi24.ro/stiri/externe/sua/donald-trump-a-venit-cu-un-nou-termen-in-care-vrea-sa-puna-capat-razboiului-din-ucraina-3648941"
         },
         {
-            "title": "Titularizare 2026: Calendarul complet al etapelor. Când au loc înscrierile și proba scrisă",
-            "content": """Titularizare 2026: Calendarul complet al etapelor. Când au loc înscrierile și proba scrisă. Află mai multe detalii citind articolul complet.""",
-            "category": "Educație",
-            "url": "https://www.digi24.ro/stiri/actualitate/educatie/titularizare-2026-calendarul-complet-al-etapelor-cand-au-loc-inscrierile-si-proba-scrisa-3647859"
+            "title": "Rusia acuză SUA de „provocare agresivă” după incidentul din largul coastelor Cubei: „Să declanşeze u",
+            "content": """Maria Zaharova, purtătoarea de cuvânt a Ministerului rus al Afacerilor Externe, a acuzat Statele Unite de „provocare agresivă” după incidentul petrecut în largul coastelor Cubei cu nava înregistrată î""",
+            "category": "Extern",
+            "url": "https://www.digi24.ro/stiri/externe/rusia/rusia-acuza-sua-de-provocare-agresiva-dupa-incidentul-din-largul-coastelor-cubei-sa-declanseze-un-conflict-3648939"
         },
         {
-            "title": "Video„Şcoală săracă – Ţară needucată”: sindicaliștii din educație și studenții, protest la Cotroceni",
-            "content": """Video„Şcoală săracă – Ţară needucată”: sindicaliștii din educație și studenții, protest la Cotroceni. Scrisoare deschisă pentru Nicușor Dan. Află mai multe detalii citind articolul complet.""",
-            "category": "Educație",
-            "url": "https://www.digi24.ro/stiri/actualitate/educatie/scoala-saraca-tara-needucata-protest-al-sidicalistilor-din-educatie-la-palatul-cotroceni-de-la-1200-la-1330-3647091"
-        },
-        {
-            "title": "Video ExclusivUn fost consilier prezidențial și-a rupt diploma de doctor, în direct, la Digi24. „Dip",
-            "content": """Video ExclusivUn fost consilier prezidențial și-a rupt diploma de doctor, în direct, la Digi24. „Diplomele de doctorat au ajuns o povară”. Află mai multe detalii citind articolul complet.""",
-            "category": "Educație",
-            "url": "https://www.digi24.ro/stiri/actualitate/un-fost-consilier-prezidential-si-a-rupt-diploma-de-doctor-in-direct-la-digi24-diplomele-de-doctorat-au-ajuns-o-povara-3644761"
+            "title": "FBI concediază agenți implicați în ancheta documentelor clasificate păstrate de Trump la Mar-a-Lago",
+            "content": """FBI a concediat cel puţin şase agenţi implicaţi într-o anchetă din 2022 privind reţinerea de către Donald Trump a unor documente clasificate la reşedinţa sa din Mar-a-Lago, a relatat miercuri The Guar""",
+            "category": "Extern",
+            "url": "https://www.digi24.ro/stiri/externe/sua/fbi-concediaza-agenti-implicati-in-ancheta-documentelor-clasificate-pastrate-de-trump-la-mar-a-lago-3648911"
         }
     ]
     return fallback_news
