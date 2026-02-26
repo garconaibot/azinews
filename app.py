@@ -257,7 +257,7 @@ for i, news in enumerate(news_data):
     col1, col2 = st.columns([8, 2])
     
     with col1:
-        st.markdown(f"<span class='news-category'>{news['category']}</span>", unsafe_allow_html=True)
+        st.markdown(f"<div style='text-align:left;'><span class='news-category'>{news['category']}</span></div>", unsafe_allow_html=True)
         st.markdown(f"**{news['title']}**")
     
     with col2:
