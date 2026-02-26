@@ -107,7 +107,29 @@ st.markdown("### 📻 Radio Live")
 radio_url = "https://live.enjoyradio.ro/radio/8000/enjoylive.mp3"
 
 st.markdown("**📻 Enjoy Radio**")
-st.audio(radio_url, format="audio/mp3", start_time=0)
+
+# Custom player cu volum setat
+st.components.v1.html(f"""
+<div style="background:rgba(255,255,255,0.1); border-radius:10px; padding:10px;">
+    <audio id="radioPlayer" controls>
+        <source src="{radio_url}" type="audio/mp3">
+    </audio>
+</div>
+<script>
+    const audio = document.getElementById('radioPlayer');
+    audio.volume = 0.15;
+    
+    // Setează volumul de fiecare dată când utilizatorul dă play
+    audio.addEventListener('play', function() {{
+        setTimeout(() => {{ audio.volume = 0.15; }}, 100);
+    }});
+    
+    // Forțează volumul la încărcare
+    window.addEventListener('load', function() {{
+        audio.volume = 0.15;
+    }});
+</script>
+""", height=80)
 
 st.markdown("---")
 
