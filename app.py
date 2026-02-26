@@ -144,9 +144,9 @@ with c3:
 with c4:
     st.markdown("<div class='card'>", unsafe_allow_html=True)
     st.markdown("### ⛽ Carburanti")
-    st.markdown(f"<p style='margin-top:-10px;'>B: 7.92 RON</p>", unsafe_allow_html=True)
-    st.markdown(f"<p style='margin-top:-10px;'>M: 8.29 RON</p>", unsafe_allow_html=True)
-    st.markdown(f"<p style='margin-top:-10px;'>GPL: 3.95 RON</p>", unsafe_allow_html=True)
+    st.markdown("B: 7.92 RON")
+    st.markdown("M: 8.29 RON")
+    st.markdown("GPL: 3.95 RON")
     st.markdown("</div>", unsafe_allow_html=True)
 
 st.markdown("---")
