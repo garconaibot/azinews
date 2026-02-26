@@ -108,7 +108,7 @@ kiss_fm_url = "https://live.kissfm.ro/kissfm.aacp"
 
 st.markdown("**📻 Kiss FM**")
 audio_html = f"""
-<audio controls autoplay>
+<audio controls autoplay volume="0.2">
     <source src="{kiss_fm_url}" type="audio/aac">
     Your browser does not support the audio element.
 </audio>
