@@ -100,6 +100,24 @@ st.markdown("<p class='title'>📰 AziNews</p>", unsafe_allow_html=True)
 st.markdown(f"<p style='text-align:center;'>{day_ro}, {now_bucharest.strftime('%d')} {month_ro} {now_bucharest.year} | România</p>", unsafe_allow_html=True)
 st.markdown("---")
 
+# ============ RADIO (SUS) ============
+st.markdown("### 📻 Radio Live")
+
+radio_stations = [
+    ("Kiss FM", "https://live.kissfm.ro/kissfm.aacp"),
+    ("Enjoy Radio", "https://live.enjoyradio.ro/radio/8000/enjoylive.mp3"),
+    ("EBS Romanian Gold", "https://azura.ebsmedia.ro/listen/romaniangold/romaniangold128.mp3"),
+    ("DJ Radio", "https://stream.djradio.ro/radio/8000/stream.mp3"),
+]
+
+r1, r2, r3, r4 = st.columns(4)
+for i, (name, url) in enumerate(radio_stations):
+    with [r1, r2, r3, r4][i % 4]:
+        st.markdown(f"**{name}**")
+        st.audio(url, format="audio/mp3")
+
+st.markdown("---")
+
 # ============ INFO RAPIDE (SUS) ============
 st.markdown("### Informații Rapide")
 
@@ -344,25 +362,6 @@ h1, h2, h3, h4 = st.columns(4)
 for i, (sign, msg) in enumerate(horoscope):
     with [h1, h2, h3, h4][i % 4]:
         st.markdown(f"**{sign}** → {msg}")
-
-# Radio
-st.markdown("---")
-st.markdown("## 📻 Radio Live")
-
-radio_stations = [
-    ("Kiss FM", "https://live.kissfm.ro/kissfm.aacp"),
-    ("Enjoy Radio", "https://live.enjoyradio.ro/radio/8000/enjoylive.mp3"),
-    ("EBS Romanian Gold", "https://azura.ebsmedia.ro/listen/romaniangold/romaniangold128.mp3"),
-    ("DJ Radio", "https://stream.djradio.ro/radio/8000/stream.mp3"),
-]
-
-r1, r2, r3, r4 = st.columns(4)
-for i, (name, url) in enumerate(radio_stations):
-    with [r1, r2, r3, r4][i % 4]:
-        st.markdown(f"**{name}**")
-        st.audio(url, format="audio/mp3")
-
-st.markdown("---")
 
 # Disclaimer
 st.markdown("""
