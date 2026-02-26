@@ -103,25 +103,13 @@ st.markdown("---")
 # ============ RADIO (SUS) ============
 st.markdown("### 📻 Radio Live")
 
-radio_stations = [
-    ("Kiss FM", "https://live.kissfm.ro/kissfm.aacp"),
-    ("Enjoy Radio", "https://live.enjoyradio.ro/radio/8000/enjoylive.mp3"),
-    ("EBS Romanian Gold", "https://azura.ebsmedia.ro/listen/romaniangold/romaniangold128.mp3"),
-    ("DJ Radio", "https://stream.djradio.ro/radio/8000/stream.mp3"),
-]
+# Kiss FM - postul principal
+kiss_fm_url = "https://live.kissfm.ro/kissfm.aacp"
 
-# Selectează postul
-station_names = [s[0] for s in radio_stations]
-selected_station = st.selectbox("Alege postul:", station_names)
-
-# Găsește URL-ul postului selectat
-selected_url = next(url for name, url in radio_stations if name == selected_station)
-
-# Afișează player-ul
-st.markdown(f"**📻 Acum: {selected_station}**")
+st.markdown("**📻 Kiss FM**")
 audio_html = f"""
 <audio controls autoplay>
-    <source src="{selected_url}" type="audio/mp3">
+    <source src="{kiss_fm_url}" type="audio/aac">
     Your browser does not support the audio element.
 </audio>
 """
