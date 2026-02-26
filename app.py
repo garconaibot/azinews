@@ -103,13 +103,13 @@ st.markdown("---")
 # ============ RADIO (SUS) ============
 st.markdown("### 📻 Radio Live")
 
-# Kiss FM - postul principal
-kiss_fm_url = "https://live.kissfm.ro/kissfm.aacp"
+# Enjoy Radio - postul principal
+radio_url = "https://live.enjoyradio.ro/radio/8000/enjoylive.mp3"
 
-st.markdown("**📻 Kiss FM**")
+st.markdown("**📻 Enjoy Radio**")
 audio_html = f"""
 <audio controls autoplay volume="0.2">
-    <source src="{kiss_fm_url}" type="audio/aac">
+    <source src="{radio_url}" type="audio/mp3">
     Your browser does not support the audio element.
 </audio>
 """
