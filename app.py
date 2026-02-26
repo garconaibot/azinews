@@ -142,7 +142,7 @@ with c3:
     st.markdown("</div>", unsafe_allow_html=True)
 
 with c4:
-    st.markdown("<div class='card' style='padding-top:5px;'>", unsafe_allow_html=True)
+    st.markdown("<div class='card'>", unsafe_allow_html=True)
     st.markdown("### ⛽ Carburant")
     st.markdown("B: 7.92 RON")
     st.markdown("M: 8.29 RON")
