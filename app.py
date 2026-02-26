@@ -388,4 +388,5 @@ Acest serviciu este doar în scop informativ.
 
 st.markdown("---")
 st.markdown("<p style='text-align:center; color:gray;'>🤖 GarconAI - Asistentul tău personal</p>", unsafe_allow_html=True)
+st.markdown("<p style='text-align:center; color:gray; font-size:0.8em;'>📧 Contact: <a href='mailto:garconaibot@gmail.com'>garconaibot@gmail.com</a></p>", unsafe_allow_html=True)
 st.markdown("<p style='text-align:center; color:gray; font-size:0.7em;'><a href='https://garconaibot.github.io/azinews/terms.html' target='_blank'>Termeni și Condiții</a> | <a href='https://garconaibot.github.io/azinews/privacy.html' target='_blank'>Politica de Confidențialitate</a></p>", unsafe_allow_html=True)
