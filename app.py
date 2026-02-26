@@ -112,13 +112,16 @@ with c3:
     st.markdown("<div class='card'>", unsafe_allow_html=True)
     st.markdown("### 💱 Curs")
     try:
-        r = requests.get("https://api.frankfurter.app/latest?from=EUR&to=RON", timeout=5)
-        if r.status_code == 200:
-            eur = r.json().get("rates", {}).get("RON", "N/A")
-            st.markdown(f"<p class='big-text'>€ {eur}</p>", unsafe_allow_html=True)
+        r_eur = requests.get("https://api.frankfurter.app/latest?from=EUR&to=RON", timeout=5)
+        r_usd = requests.get("https://api.frankfurter.app/latest?from=USD&to=RON", timeout=5)
+        eur = r_eur.json().get("rates", {}).get("RON", "N/A")
+        usd = r_usd.json().get("rates", {}).get("RON", "N/A")
+        st.markdown(f"<p class='big-text'>€ {eur}</p>", unsafe_allow_html=True)
+        st.markdown(f"$ {usd}" if usd != "N/A" else "$ -")
     except:
-        st.markdown("<p class='big-text'>5.10</p>", unsafe_allow_html=True)
-    st.markdown("RON/EUR")
+        st.markdown(f"<p class='big-text'>€ 5.10</p>", unsafe_allow_html=True)
+        st.markdown("$ 4.60")
+    st.markdown("RON")
     st.markdown("</div>", unsafe_allow_html=True)
 
 with c4:
