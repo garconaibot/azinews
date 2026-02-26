@@ -132,52 +132,58 @@ st.markdown("## 📰 Știri din România")
 def fetch_news():
     fallback_news = [
         {
-            "title": "Reformă la Romsilva. Ministrul Mediului: Suntem la un pas de a adopta reorganizarea. Trecem de la 41",
-            "content": """Reformă la Romsilva. Ministrul Mediului: Suntem la un pas de a adopta reorganizarea. Trecem de la 41, la 19 direcții în toată țara. Află mai multe detalii citind articolul complet.""",
+            "title": "Desemnarea noilor șefi de parchete. Cei cinci candidați pentru funcţia de procuror-şef adjunct al DI",
+            "content": """Desemnarea noilor șefi de parchete. Cei cinci candidați pentru funcţia de procuror-şef adjunct al DIICOT, intervievați astăzi. Află mai multe detalii citind articolul complet.""",
             "category": "Actualitate",
-            "url": "https://www.digi24.ro/stiri/actualitate/politica/reforma-la-romsilva-ministrul-mediului-suntem-la-un-pas-de-a-adopta-reorganizarea-trecem-de-la-41-la-19-directii-in-toata-tara-3648457"
+            "url": "https://www.digi24.ro/stiri/actualitate/justitie/desemnarea-noilor-sefi-de-parchete-cei-cinci-candidati-pentru-functia-de-procuror-sef-adjunct-al-diicot-intervievati-astazi-3648711"
         },
         {
-            "title": "Exclusiv„Asta ajunge în plămânii noștri”. Diana Buzoianu spune că zăpada neagră de pe străzi este „s",
-            "content": """Exclusiv„Asta ajunge în plămânii noștri”. Diana Buzoianu spune că zăpada neagră de pe străzi este „simbolul poluării din București”. Află mai multe detalii citind articolul complet.""",
+            "title": "VideoIlie Bolojan, vizită oficială la Bruxelles: premierul va discuta cu Ursula von der Leyen despre",
+            "content": """VideoIlie Bolojan, vizită oficială la Bruxelles: premierul va discuta cu Ursula von der Leyen despre PNRR. Agenda deplasării. Află mai multe detalii citind articolul complet.""",
             "category": "Actualitate",
-            "url": "https://www.digi24.ro/stiri/actualitate/politica/asta-ajunge-in-plamanii-nostri-diana-buzoianu-spune-ca-zapada-neagra-de-pe-strazi-este-simbolul-poluarii-din-bucuresti-3648467"
+            "url": "https://www.digi24.ro/stiri/actualitate/politica/ilie-bolojan-vizita-oficiala-la-bruxelles-premierul-va-discuta-cu-ursula-von-der-leyen-despre-pnrr-agenda-deplasarii-3648699"
         },
         {
-            "title": "Grindeanu face „referendum” în PSD dacă îl mai vrea premier pe Bolojan: „Protocolul poate să rămână ",
-            "content": """Grindeanu face „referendum” în PSD dacă îl mai vrea premier pe Bolojan: „Protocolul poate să rămână cu un alt prim-ministru dat de PNL”. Află mai multe detalii citind articolul complet.""",
+            "title": "Cine este astronautul din cauza căruia a fost evacuat întreg echipajul de pe Staţia Spaţială Interna",
+            "content": """Cine este astronautul din cauza căruia a fost evacuat întreg echipajul de pe Staţia Spaţială Internaţională. „Mă simt foarte bine”. Află mai multe detalii citind articolul complet.""",
             "category": "Actualitate",
-            "url": "https://www.digi24.ro/stiri/actualitate/politica/grindeanu-face-referendum-in-psd-daca-il-mai-vrea-premier-pe-bolojan-protocolul-poate-sa-ramana-cu-un-alt-prim-ministru-dat-de-pnl-3648443"
+            "url": "https://www.digi24.ro/stiri/externe/sua/cine-este-astronautul-din-cauza-caruia-a-fost-evacuat-intreg-echipajul-de-pe-statia-spatiala-internationala-ma-simt-foarte-bine-3648533"
         },
         {
-            "title": "Un fost șef al poliției din Gorj, pensionar special, numit la conducerea fabricii de armament Sadu. ",
-            "content": """Un fost șef al poliției din Gorj, pensionar special, numit la conducerea fabricii de armament Sadu. Explicațiile ministrului Economiei. Află mai multe detalii citind articolul complet.""",
+            "title": "Expunerea la zgomotul din trafic în timpul somnului este asociată cu creșterea „colesterolului rău”,",
+            "content": """Expunerea la zgomotul din trafic în timpul somnului este asociată cu creșterea „colesterolului rău”, arată un studiu european. Află mai multe detalii citind articolul complet.""",
             "category": "Actualitate",
-            "url": "https://www.digi24.ro/stiri/actualitate/politica/un-fost-sef-al-politiei-din-gorj-pensionar-special-numit-la-conducerea-fabricii-de-armament-sadu-explicatiile-ministrului-economiei-3648357"
+            "url": "https://www.digi24.ro/stiri/actualitate/sanatate/expunerea-la-zgomotul-din-trafic-in-timpul-somnului-este-asociata-cu-cresterea-colesterolului-rau-arata-un-studiu-european-3648401"
         },
         {
-            "title": "Kremlinul pune sub semnul întrebării un summit Putin–Zelenski. Ce piedici invocă",
-            "content": """Kremlinul pune sub semnul întrebării un summit Putin–Zelenski. Ce piedici invocă. Află mai multe detalii citind articolul complet.""",
+            "title": "Video„A încetat să mai existe”. Ucrainenii le-au distrus rușilor un lansator de rachete S-400 și un ",
+            "content": """Video„A încetat să mai existe”. Ucrainenii le-au distrus rușilor un lansator de rachete S-400 și un sistem Panțir în Crimeea ocupată ilegal. Află mai multe detalii citind articolul complet.""",
             "category": "Extern",
-            "url": "https://www.digi24.ro/stiri/externe/ue/kremlinul-pune-sub-semnul-intrebarii-un-summit-putin-zelenski-ce-piedici-invoca-3648481"
+            "url": "https://www.digi24.ro/stiri/externe/a-incetat-sa-mai-existe-ucrainenii-le-au-distrus-rusilor-un-lansator-de-rachete-s-400-si-un-sistem-pantir-in-crimeea-ocupata-ilegal-3648595"
         },
         {
-            "title": "Mii de persoane au fost găsite trăind în condiţii „şocante” în centrul de detenţie al-Hol din Siria,",
-            "content": """Mii de persoane au fost găsite trăind în condiţii „şocante” în centrul de detenţie al-Hol din Siria, spun autorităţile. Află mai multe detalii citind articolul complet.""",
+            "title": "Cine este astronautul din cauza căruia a fost evacuat întreg echipajul de pe Staţia Spaţială Interna",
+            "content": """Cine este astronautul din cauza căruia a fost evacuat întreg echipajul de pe Staţia Spaţială Internaţională. „Mă simt foarte bine”. Află mai multe detalii citind articolul complet.""",
             "category": "Extern",
-            "url": "https://www.digi24.ro/stiri/externe/mii-de-persoane-au-fost-gasite-traind-in-conditii-socante-in-centrul-de-detentie-al-hol-din-siria-spun-autoritatile-3648377"
+            "url": "https://www.digi24.ro/stiri/externe/sua/cine-este-astronautul-din-cauza-caruia-a-fost-evacuat-intreg-echipajul-de-pe-statia-spatiala-internationala-ma-simt-foarte-bine-3648533"
         },
         {
-            "title": "Islanda va organiza în acest an un referendum pentru aderarea la UE, spune şefa guvernului",
-            "content": """Islanda va organiza în acest an un referendum pentru aderarea la UE, spune şefa guvernului. Află mai multe detalii citind articolul complet.""",
+            "title": "Cum i-a întins Deutsche Bank covorul roșu lui Jeffrey Epstein: unul dintre cei mai sofisticați, dar ",
+            "content": """Cum i-a întins Deutsche Bank covorul roșu lui Jeffrey Epstein: unul dintre cei mai sofisticați, dar și mai dificili clienți. Află mai multe detalii citind articolul complet.""",
             "category": "Extern",
-            "url": "https://www.digi24.ro/stiri/externe/ue/islanda-va-organiza-in-acest-an-un-referendum-pentru-aderarea-la-ue-spune-sefa-guvernului-3648393"
+            "url": "https://www.digi24.ro/stiri/externe/sua/cum-i-a-intins-deutsche-bank-covorul-rosu-lui-jeffrey-epstein-unul-dintre-cei-mai-sofisticati-dar-si-mai-dificili-clienti-3647827"
         },
         {
-            "title": "IIF: Cheltuielile guvernamentale au dus datoria mondială la un nivel record în 2025",
-            "content": """IIF: Cheltuielile guvernamentale au dus datoria mondială la un nivel record în 2025. Află mai multe detalii citind articolul complet.""",
+            "title": "Ce s-a întâmplat după ce Elon Musk a deconectat armata rusă de la rețeaua Starlink",
+            "content": """Ce s-a întâmplat după ce Elon Musk a deconectat armata rusă de la rețeaua Starlink. Află mai multe detalii citind articolul complet.""",
             "category": "Extern",
-            "url": "https://www.digi24.ro/stiri/externe/mapamond/iif-cheltuielile-guvernamentale-au-dus-datoria-mondiala-la-un-nivel-record-in-2025-3648397"
+            "url": "https://www.digi24.ro/stiri/externe/ce-s-a-intamplat-dupa-ce-elon-musk-a-deconectat-armata-rusa-de-la-reteaua-starlink-3648433"
+        },
+        {
+            "title": "AnalizăCât de realiste și eficiente sunt măsurile pentru relansarea economiei adoptate de Guvern. Ec",
+            "content": """AnalizăCât de realiste și eficiente sunt măsurile pentru relansarea economiei adoptate de Guvern. Economist: Este o culegere de măsuri tehnice. Află mai multe detalii citind articolul complet.""",
+            "category": "Economie",
+            "url": "https://www.digi24.ro/stiri/economie/cat-de-realiste-si-eficiente-sunt-masurile-pentru-relansarea-economiei-adoptate-de-guvern-economist-este-o-culegere-de-masuri-tehnice-3647853"
         },
         {
             "title": "ExclusivAvertismentul consilierului lui Mugur Isărescu: Cum devin pensiile speciale o problemă socia",
@@ -198,10 +204,10 @@ def fetch_news():
             "url": "https://www.digi24.ro/stiri/economie/agricultura/carnea-de-porc-congelata-nu-va-mai-putea-fi-vanduta-ca-proaspata-in-romania-anuntul-ministrului-florin-barbu-3648097"
         },
         {
-            "title": "VideoRaport: Fructe cu pesticide au fost identificate în mai multe județe. Ce produse sunt neconform",
-            "content": """VideoRaport: Fructe cu pesticide au fost identificate în mai multe județe. Ce produse sunt neconforme. Află mai multe detalii citind articolul complet.""",
-            "category": "Economie",
-            "url": "https://www.digi24.ro/stiri/economie/raport-fructe-cu-pesticide-au-fost-identificate-in-mai-multe-judete-ce-alimente-sunt-neconforme-3648049"
+            "title": "Titularizare 2026: Calendarul complet al etapelor. Când au loc înscrierile și proba scrisă",
+            "content": """Titularizare 2026: Calendarul complet al etapelor. Când au loc înscrierile și proba scrisă. Află mai multe detalii citind articolul complet.""",
+            "category": "Educație",
+            "url": "https://www.digi24.ro/stiri/actualitate/educatie/titularizare-2026-calendarul-complet-al-etapelor-cand-au-loc-inscrierile-si-proba-scrisa-3647859"
         },
         {
             "title": "Video„Şcoală săracă – Ţară needucată”: sindicaliștii din educație și studenții, protest la Cotroceni",
@@ -214,12 +220,6 @@ def fetch_news():
             "content": """Video ExclusivUn fost consilier prezidențial și-a rupt diploma de doctor, în direct, la Digi24. „Diplomele de doctorat au ajuns o povară”. Află mai multe detalii citind articolul complet.""",
             "category": "Educație",
             "url": "https://www.digi24.ro/stiri/actualitate/un-fost-consilier-prezidential-si-a-rupt-diploma-de-doctor-in-direct-la-digi24-diplomele-de-doctorat-au-ajuns-o-povara-3644761"
-        },
-        {
-            "title": "VideoIndemnizația de doctorat, redusă la jumătate. Sindicatele se revoltă: Neînțeleaptă măsura. Strâ",
-            "content": """VideoIndemnizația de doctorat, redusă la jumătate. Sindicatele se revoltă: Neînțeleaptă măsura. Strângem cureaua, dar nu oricât și nu oricum. Află mai multe detalii citind articolul complet.""",
-            "category": "Educație",
-            "url": "https://www.digi24.ro/stiri/actualitate/educatie/indemnizatia-de-doctorat-redusa-la-jumatate-sindicatele-se-revolta-neinteleapta-masura-strangem-cureaua-dar-nu-oricat-si-nu-oricum-3644227"
         }
     ]
     return fallback_news
