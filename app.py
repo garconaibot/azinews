@@ -158,6 +158,13 @@ st.markdown("## 📰 Știri din România")
 def fetch_news():
     fallback_news = [
         {
+            "title": "Ciprian Ciucu și zăpada din București: jurnaliștii se isterizează, primarii intră în vrie, sarea în ",
+            "content": """Primarul general al Capitalei, Ciprian Ciucu, a declarat, joi, referitor la deszăpezire, că în România, atunci când ninge, toată lumea se isterizează, începând cu jurnaliştii, iar primarii „intră în v""",
+            "category": "Actualitate",
+            "url": "https://www.digi24.ro/stiri/ciprian-ciucu-si-zapada-din-bucuresti-jurnalistii-se-isterizeaza-primarii-intra-in-vrie-sarea-in-exces-distruge-asfaltul-3649209",
+            "image": "https://s.iw.ro/gateway/g/ZmlsZVNvdXJjZT1odHRwJTNBJTJGJTJG/c3RvcmFnZTA4dHJhbnNjb2Rlci5yY3Mt/cmRzLnJvJTJGc3RvcmFnZSUyRjIwMjYl/MkYwMSUyRjIyJTJGMjU1NDU0MF8yNTU0/NTQwX2NpcHJpYW4tY2l1Y3UtaW5xdWFt/LWdlb3JnZS1jYWxpbi5qcGcmaGFzaD05/NjhkNTNhZWMyOGJhOTlkNjM3YTdmODUwZjcwYWE3ZA==.jpg"
+        },
+        {
             "title": "Soluții moderne pentru durerea de gleznă",
             "content": """Glezna este o articulație ce suportă zilnic încărcări mari, iar durerea apărută după traumatisme sau prin uzură poate deveni rapid limitativă. Dacă simptomul persistă, evaluarea trebuie să clarifice d""",
             "category": "Actualitate",
@@ -221,46 +228,74 @@ def fetch_news():
             "image": "https://s.iw.ro/gateway/g/ZmlsZVNvdXJjZT1odHRwJTNBJTJGJTJG/c3RvcmFnZTA4dHJhbnNjb2Rlci5yY3Mt/cmRzLnJvJTJGc3RvcmFnZSUyRjIwMjUl/MkYxMiUyRjA0JTJGMjQ3ODkzNV8yNDc4/OTM1X2JvZ2Rhbi1pdmFuLWlucXVhbS1n/ZW9yZ2UtY2FsaW4uanBnJmhhc2g9ZDg3/NDY4N2I1NTdkZTY4YjYyNjJkMGVhY2VkZDU0YTQ=.jpg"
         },
         {
-            "title": "Criză de pământuri rare în SUA: industria aerospațială și semiconductorii, afectați de blocajele Chi",
-            "content": """Deficitul de pământuri rare esențiale pentru industria aerospațială și producția de cipuri din Statele Unite se adâncește, în pofida armistițiului comercial dintre Washington și Beijing, iar unele com""",
+            "title": "UNICEF condamnă atacurile aeriene din Myanmar: Civilii plătesc prețul conflictului",
+            "content": """Agenția Națiunilor Unite pentru copii, UNICEF, și-a exprimat îngrijorarea profundă față de informațiile recente privind loviturile aeriene din Myanmar efectuate de armata țării asupra unor zone civile""",
             "category": "Extern",
-            "url": "https://www.digi24.ro/stiri/externe/criza-de-pamanturi-rare-in-sua-industria-aerospatiala-si-semiconductorii-afectati-de-blocajele-chinei-reuters-3648883",
-            "image": "https://s.iw.ro/gateway/g/ZmlsZVNvdXJjZT1odHRwJTNBJTJGJTJG/c3RvcmFnZTA4dHJhbnNjb2Rlci5yY3Mt/cmRzLnJvJTJGc3RvcmFnZSUyRjIwMjUl/MkYwOSUyRjE5JTJGMjM1NTk0OF8yMzU1/OTQ4X0RvbmFsZC10cnVtcC1zaS1YaS1K/aW5waW5nLmpwZyZoYXNoPWIwYTg4ZjAxODM5N2EzNDJjMmU2NGE2OGM1MTE3OTQ1.jpg"
+            "url": "https://www.mediafax.ro/externe/unicef-condamna-atacurile-aeriene-din-myanmar-civilii-platesc-pretul-conflictului-23693371",
+            "image": "https://www.mediafax.ro//wp-content/uploads/2025/09/hepta_8220654-1024x669.jpg"
         },
         {
-            "title": "Din 6 martie, Jurnalul de Științe revine la Digi World",
-            "content": """Din 6 martie, Jurnalul de Științe revine la Digi World Citește mai mult pe Digi24.""",
+            "title": "Avertismentul lui Zelenski: Rusia încearcă să „se joace” cu Trump și să blocheze negocierile de pace",
+            "content": """Președintele ucrainean Volodimir Zelenski a avertizat, într-un interviu pentru Fox News, că Rusia încearcă să „se joace” cu președintele american Donald Trump și să blocheze eforturile depuse de SUA p""",
+            "category": "Extern",
+            "url": "https://www.mediafax.ro/externe/avertismentul-lui-zelenski-rusia-incearca-sa-se-joace-cu-trump-si-sa-blocheze-negocierile-de-pace-23693360",
+            "image": "https://www.mediafax.ro//wp-content/uploads/2026/02/8112408-hepta_mediafax_foto-abacapress_hepta-1024x683.jpg"
+        },
+        {
+            "title": "Peste 50% dintre angajați vor să își schimbe jobul în 2026. Salariul, principalul motiv al deciziei",
+            "content": """Salariul a devenit principalul motiv pentru care angajații români își caută un nou job în 2026. Aproape 40% spun că veniturile actuale nu mai acoperă costul vieții, iar peste jumătate plănuiesc să își""",
             "category": "Actualitate",
-            "url": "https://www.digi24.ro/stiri/actualitate/din-6-martie-jurnalul-de-stiinte-revine-la-digi-world-3649033",
-            "image": "https://s.iw.ro/gateway/g/ZmlsZVNvdXJjZT1odHRwJTNBJTJGJTJG/c3RvcmFnZTA4dHJhbnNjb2Rlci5yY3Mt/cmRzLnJvJTJGc3RvcmFnZSUyRjIwMjYl/MkYwMiUyRjI2JTJGMjYwNzYzMV8yNjA3/NjMxXzEyODB4NzIwcHhfY29tdW5pY2F0/RElHSTI0LmpwZyZoYXNoPTgyNDcyNzY4OTMwZjM3YjdlYzEzMWYxOWRlZjE3NTE1.jpg"
+            "url": "https://www.mediafax.ro/social/peste-50-dintre-angajati-vor-sa-isi-schimbe-jobul-in-2026-salariul-principalul-motiv-al-deciziei-23693358",
+            "image": "https://www.mediafax.ro//wp-content/uploads/2025/07/dream-job-1024x683.jpg"
         },
         {
-            "title": "„Un bolnav cu mintea tulburată”. Donald Trump a răbufnit după ce Robert De Niro i-a îndemnat pe amer",
-            "content": """Actorul Robert De Niro este „un bolnav cu mintea tulburată”, a afirmat miercuri preşedintele american pe reţeaua sa Truth Social, după ce actorul a făcut un apel la „alungarea” administraţiei Trump pe""",
-            "category": "Extern",
-            "url": "https://www.digi24.ro/stiri/externe/sua/un-bolnav-cu-mintea-tulburata-donald-trump-a-rabufnit-dupa-ce-robert-de-niro-i-a-indemnat-pe-americani-sa-i-reziste-presedintelui-3648983",
-            "image": "https://s.iw.ro/gateway/g/ZmlsZVNvdXJjZT1odHRwJTNBJTJGJTJG/c3RvcmFnZTA4dHJhbnNjb2Rlci5yY3Mt/cmRzLnJvJTJGc3RvcmFnZSUyRjIwMjYl/MkYwMiUyRjI2JTJGMjYwNzYyOF8yNjA3/NjI4X3Byb2ZpbWVkaWEtMDg4OTY4MTkz/Mi5qcGcmaGFzaD1lZjRmYWIyMTE2YWU1NDliN2NiZGM1MzE4NWE4NzM0NQ==.jpg"
-        },
-        {
-            "title": "Alertă de gripă aviară în Cluj: două lebede, găsite moarte în zona unui lac de acumulare. Au fost st",
-            "content": """Alertă de gripa aviară în Cluj, după ce două lebede au fost găsite moarte în zona unui lac de acumulare. Autoritățile au stabilit zone de restricție pentru a opri răspândirea bolii și oamenii sunt obl""",
+            "title": "Percheziții DIICOT la un club de noapte din București, într-un dosar de trafic de persoane, proxenet",
+            "content": """Procurorii DIICOT au pus în aplicare joi 24 de mandate de percheziție domiciliară în județele Constanța, Ilfov, Ialomița și în municipiul București, într-un dosar ce vizează constituirea unui grup inf""",
             "category": "Actualitate",
-            "url": "https://www.digi24.ro/stiri/actualitate/alerta-de-gripa-aviara-in-cluj-doua-lebede-gasite-moarte-in-zona-unui-lac-de-acumulare-au-fost-stabilite-mai-multe-restrictii-3648993",
-            "image": "https://s.iw.ro/gateway/g/ZmlsZVNvdXJjZT1odHRwJTNBJTJGJTJG/c3RvcmFnZTA4dHJhbnNjb2Rlci5yY3Mt/cmRzLnJvJTJGc3RvcmFnZSUyRjIwMjYl/MkYwMiUyRjI2JTJGMjYwNzYyNl8yNjA3/NjI2X3NodXR0ZXJzdG9ja18yMzgwNjk5/Mjc5LXNjYWxlZC0xLmpwZyZoYXNoPTQ5/ZDRkYjRjYTgyN2YxMWQ3MmI4ZDU0ZmFlYzAxOTE3.jpg"
+            "url": "https://www.mediafax.ro/social/perchezitii-diicot-la-un-club-de-noapte-din-bucuresti-intr-un-dosar-de-trafic-de-persoane-proxenetism-si-spalare-de-bani-23693354",
+            "image": "https://www.mediafax.ro//wp-content/uploads/2026/02/7508175-mediafax_foto-alexandra_pandrea-1024x683.jpg"
         },
         {
-            "title": "Rusia încearcă „să se joace” cu Donald Trump pentru a amâna negocierile de pace, spune Volodimir Zel",
-            "content": """În cadrul unui interviu acordat la Kiev pentru televiziunea Fox News, apropiată lui Donald Trump, Volodimir Zelenski a afirmat că Rusia încearcă „să se joace cu preşedintele Statelor Unite” şi să trag""",
+            "title": "SUA și Ucraina discută despre reconstrucția postbelică la negocierile de la Geneva",
+            "content": """SUA și Ucraina se întâlnesc joi la Geneva pentru a discuta reconstrucția Ucrainei după război, și inclusiv un „pachet de prosperitate”. Citește mai mult pe Mediafax.""",
             "category": "Extern",
-            "url": "https://www.digi24.ro/stiri/externe/ue/rusia-incearca-sa-se-joace-cu-donald-trump-pentru-a-amana-negocierile-de-pace-spune-volodimir-zelenski-nu-poate-sa-ne-ocupe-3648999",
-            "image": "https://s.iw.ro/gateway/g/ZmlsZVNvdXJjZT1odHRwJTNBJTJGJTJG/c3RvcmFnZTA4dHJhbnNjb2Rlci5yY3Mt/cmRzLnJvJTJGc3RvcmFnZSUyRjIwMjUl/MkYxMiUyRjA0JTJGMjQ3Mjc4Ml8yNDcy/NzgyX2lsdXN0cmF0aWUtdHJ1bXAtcHV0/aW4temVsZW5za2kuanBnJmhhc2g9MDNi/YzhlNjlkMDc5M2NiMjliODFjODEzMTdkMjU3ZmE=.jpg"
+            "url": "https://www.mediafax.ro/externe/sua-si-ucraina-discuta-despre-reconstructia-postbelica-la-negocierile-de-la-geneva-23693353",
+            "image": "https://www.mediafax.ro//wp-content/uploads/2025/11/8061652-hepta_mediafax_foto-dpa_hepta-1024x655.jpg"
         },
         {
-            "title": "Permis suspendat pentru neplata amenzilor. Cseke Attila: „Va aduce o colectare mult mai bună”. Ce tr",
-            "content": """Schimbarea legii privind neplata amenzilor de circulație înseamnă suspendarea permisului de șofer în cazul rău-platnicilor. Perioada de suspendare este calculată în funcție de valoarea amenzii. Pentru""",
-            "category": "Economie",
-            "url": "https://www.digi24.ro/stiri/economie/permis-suspendat-pentru-neplata-amenzilor-ce-trebuie-sa-stie-soferii-cseke-attila-va-aduce-o-colectare-mult-mai-buna-3648945",
-            "image": "https://s.iw.ro/gateway/g/ZmlsZVNvdXJjZT1odHRwJTNBJTJGJTJG/c3RvcmFnZTA4dHJhbnNjb2Rlci5yY3Mt/cmRzLnJvJTJGc3RvcmFnZSUyRjIwMjUl/MkYxMSUyRjA4JTJGMjQzMjg2OF8yNDMy/ODY4X3NvZmVyLXZvbGFuLXZpdGV6YS1t/YXNpbmEuanBnJmhhc2g9NjkwMGE0NzIzMjliOTViNGIyNGJlMmY5Mzc0NjljNzg=.jpg"
+            "title": "Procurorul general al României, Alex Florența, propune schimbarea competenței DIICOT",
+            "content": """Cinci candidați pentru funcția de adjunct al DIICOT sunt audiați astăzi de comisia de interviu de la ministerul Justiției. Este vorba despre procurorii Claudia Curelaru, actualul adjunct, dar și despr""",
+            "category": "Actualitate",
+            "url": "https://www.mediafax.ro/stirile-zilei/procurorul-general-al-romaniei-alex-florenta-propune-schimbarea-competentei-diicot-23693355",
+            "image": "https://www.mediafax.ro//wp-content/uploads/2026/02/captura-de-ecran-din-2026-02-26-la-11-22-15-1024x674.png"
+        },
+        {
+            "title": "Dotări SF pe drumurile dintr-un județ: senzori pentru monitorizarea vremii și a traficului și un uti",
+            "content": """Drumurile din județul Galați vor fi dotate cu echipamente ultramoderne. Pe unele sectoare vor fi montați senzori pentru monitorizarea vremii și a traficului. De asemenea, va fi cumpărat un echipament """,
+            "category": "Actualitate",
+            "url": "https://www.mediafax.ro/social/dotari-sf-pe-drumurile-dintr-un-judet-senzori-pentru-monitorizarea-vremii-si-a-traficului-si-un-utilaj-pentru-intretinere-deszapezire-curatenie-23693349",
+            "image": "https://www.mediafax.ro//wp-content/uploads/2026/02/utilaj-1024x612.jpg"
+        },
+        {
+            "title": "Japonia testează călugărul-robot AI „Buddharoid” pentru îndrumare spirituală",
+            "content": """Un templu budist din Kyoto a introdus recent „Buddharoid”, un robot humanoid echipat cu inteligență artificială, conceput pentru a interacționa cu credincioșii. Creat de specialiștii de la Universitat""",
+            "category": "Extern",
+            "url": "https://www.mediafax.ro/externe/japonia-testeaza-calugarul-robot-ai-buddharoid-pentru-indrumare-spirituala-23693347",
+            "image": "https://www.mediafax.ro//wp-content/uploads/2026/02/buddharoid-robod-umanoid-budist-japonia-2-1024x609.jpg"
+        },
+        {
+            "title": "Groenlanda restricționează investițiile străine pe fondul interesului american pentru proprietăți",
+            "content": """Un val neașteptat de interes pentru proprietăți imobiliare din partea investitorilor americani, apărut la începutul anului 2025 în Nuuk, capitala Groenlandei, a determinat autoritățile locale să accel""",
+            "category": "Extern",
+            "url": "https://www.mediafax.ro/externe/groenlanda-restrictioneaza-investitiile-straine-pe-fondul-interesului-american-pentru-proprietati-23693344",
+            "image": "https://www.mediafax.ro//wp-content/uploads/2026/01/pexels-lara-jameson-8828316-1024x683.jpg"
+        },
+        {
+            "title": "Donald Trump îl consideră pe legendarul actor Robert De Niro o „persoană cu tulburări mintale”",
+            "content": """Donald Trump l-a atacat pe rețeaua sa de socializare Truth pe actorul Robert De Niro care, în cadrul unui podcast le-a cerut concetățenilor săi să „salveze țara” „opunând rezistență” chiriașului de la""",
+            "category": "Extern",
+            "url": "https://www.mediafax.ro/externe/donald-trump-il-considera-pe-legendarul-actor-robert-de-niro-o-persoana-cu-tulburari-mintale-23693329",
+            "image": "https://www.mediafax.ro//wp-content/uploads/2026/02/8043222-hepta_mediafax_foto-abacapress_hepta-1024x682.jpg"
         }
     ]
     return fallback_news
