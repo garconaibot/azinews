@@ -7,6 +7,22 @@ import pytz
 bucharest_tz = pytz.timezone('Europe/Bucharest')
 now_bucharest = datetime.now(bucharest_tz)
 
+# Ziua saptamanii in romana
+days_ro = {
+    'Monday': 'Luni', 'Tuesday': 'Marți', 'Wednesday': 'Miercuri',
+    'Thursday': 'Joi', 'Friday': 'Vineri', 'Saturday': 'Sâmbătă', 'Sunday': 'Duminică'
+}
+day_ro = days_ro.get(now_bucharest.strftime('%A'), now_bucharest.strftime('%A'))
+
+# Luna in romana
+months_ro = {
+    'January': 'Ianuarie', 'February': 'Februarie', 'March': 'Martie',
+    'April': 'Aprilie', 'May': 'Mai', 'June': 'Iunie',
+    'July': 'Iulie', 'August': 'August', 'September': 'Septembrie',
+    'October': 'Octombrie', 'November': 'Noiembrie', 'December': 'Decembrie'
+}
+month_ro = months_ro.get(now_bucharest.strftime('%B'), now_bucharest.strftime('%B'))
+
 st.set_page_config(page_title="AziNews", page_icon="📰", layout="wide")
 
 # Styling
@@ -80,7 +96,7 @@ if 'expanded_news' not in st.session_state:
 
 # ============ HEADER ============
 st.markdown("<p class='title'>📰 AziNews</p>", unsafe_allow_html=True)
-st.markdown(f"<p style='text-align:center;'>{now_bucharest.strftime('%A, %d %B %Y')} | România</p>", unsafe_allow_html=True)
+st.markdown(f"<p style='text-align:center;'>{day_ro}, {now_bucharest.strftime('%d')} {month_ro} {now_bucharest.year} | România</p>", unsafe_allow_html=True)
 st.markdown("---")
 
 # ============ INFO RAPIDE (SUS) ============
