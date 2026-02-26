@@ -87,11 +87,12 @@ with c1:
     st.markdown("<div class='card'>", unsafe_allow_html=True)
     st.markdown("### ☀️ Vremea")
     try:
-        r = requests.get("https://wttr.in/Bucharest?format=%c%t", timeout=5)
+        r = requests.get("https://api.open-meteo.com/v1/forecast?latitude=44.43&longitude=26.10&current_weather=true", timeout=5)
         if r.status_code == 200:
-            st.markdown(f"<p class='big-text'>{r.text.strip()}</p>", unsafe_allow_html=True)
+            temp = r.json()['current_weather']['temperature']
+            st.markdown(f"<p class='big-text'>{temp}°C</p>", unsafe_allow_html=True)
     except:
-        st.markdown("<p class='big-text'>13°C</p>", unsafe_allow_html=True)
+        st.markdown("<p class='big-text'>4°C</p>", unsafe_allow_html=True)
     st.markdown("București")
     st.markdown("</div>", unsafe_allow_html=True)
 
