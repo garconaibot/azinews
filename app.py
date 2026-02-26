@@ -101,7 +101,7 @@ st.markdown(f"<p style='text-align:center;'>{day_ro}, {now_bucharest.strftime('%
 st.markdown("---")
 
 # ============ INFO RAPIDE (SUS) ============
-st.markdown("## 📊 Informații Rapide")
+st.markdown("### Informații Rapide")
 
 c1, c2, c3, c4 = st.columns(4)
 
@@ -152,7 +152,7 @@ with c4:
 st.markdown("---")
 
 # ============ STIRI (MIJLOC) ============
-st.markdown("## 📰 Știri din România")
+st.markdown("### Știri din România")
 
 @st.cache_data(ttl=300)
 def fetch_news():
