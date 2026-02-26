@@ -121,7 +121,7 @@ with c3:
     except:
         st.markdown(f"<p class='big-text'>€ 5.10</p>", unsafe_allow_html=True)
         st.markdown("$ 4.60")
-    st.markdown("RON")
+    st.markdown("EUR / RON")
     st.markdown("</div>", unsafe_allow_html=True)
 
 with c4:
